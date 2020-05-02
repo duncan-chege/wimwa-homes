@@ -1,0 +1,175 @@
+/*
+  Starter "blank" page
+
+  * replace with your own content
+------------------------------------- */
+
+
+
+.bg-grad {
+    padding: 100px 0;
+    background: linear-gradient(72.65deg, #F9F9F9 4.22%, #F1F1F1 94.44%);
+}
+
+
+/*
+    Intro cards
+*/
+.intro {
+    padding: 40px 0;
+}
+
+.intro h1 {
+    margin-bottom: 20px;
+    font-size: 1.68rem;
+    font-weight: bold;
+}
+
+.intro-card {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 40px;
+    min-height: 310px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.intro-card h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ececec;
+    font-weight: 600;
+    font-size: 1.68rem;
+}
+
+.intro-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-card ul li:last-child {
+    margin-bottom: 0;
+}
+
+.intro-card ul li {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.87rem;
+    color: #222;
+}
+
+
+/*
+    Intro info
+*/
+ul.intro-info li span {
+    margin-left: 2px;
+    font-weight: 400;
+    color: #707070;
+}
+
+ul.intro-info li a {
+    font-weight: 400;
+    color: #707070;
+    border-bottom: 1px solid rgba(34,34,34, 0);
+    transition: all 0.35s;
+}
+
+ul.intro-info li a:before {
+    content: none;
+}
+
+ul.intro-info li a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(34,34,34, 1);
+}
+
+
+/*
+    Intro links
+*/
+ul.intro-links li a {
+    position: relative;
+    display: inline-block;
+    color: #222;
+    border-bottom: 1px solid rgba(34,34,34, 0);
+    transition: all 0.35s;
+}
+
+ul.intro-links li a span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    right: -30px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: #ececec;
+    border-radius: 100px;
+    opacity: 0;
+    transition: all 0.35s;
+}
+
+ul.intro-links li a span i {
+    font-size: 16px;
+}
+
+ul.intro-links li a:hover {
+    border-color: rgba(34,34,34, 1);
+}
+
+ul.intro-links li a:hover > span {
+    opacity: 1;
+    transition-delay: 0.25s;
+}
+
+
+/*
+    Link animation
+*/
+@keyframes anim-ic-link {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.35;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ic-link-animated {
+    animation: anim-ic-link 1.5s infinite;
+}
+
+.ic-link-animated:hover {
+    animation: none;
+}
+
+
+
+/*
+    Guide
+*/
+.guide {
+    padding: 60px 0 100px 0;
+}
+
+.i-guide h5 {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.i-guide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
