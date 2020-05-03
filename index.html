@@ -1,121 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>89elements | Starter Page</title>
+    <title>Wimwa Homes</title>
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="assets/fonts/fonts.min.css">
-    <link rel="stylesheet" href="assets/styles/css/vendors/vendors.min.css">
-    <!-- ** YOUR CSS HERE ** -->
-    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&family=Quicksand:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
+
+
 <body>
+    <nav class="navbar navbar-expand-lg">
 
+        <!--  Show this only on mobile to medium screens  -->
+          <a class="navbar-brand d-lg-none" href="#"><img src='assets/img/wimwa-homes.png' class="site-logo"></a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        <!--  Use flexbox utility classes to change how the child elements are justified  -->
+          <div class="collapse navbar-collapse" id="navbarToggle">
+        
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            
+        <!--   Show this only lg screens and up   -->
+            <a class="navbar-brand d-none d-lg-block" href="#"><img src='assets/img/wimwa-homes.png' class="site-logo"></a>
+            
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
+    <!--Intro--------------------------->
 
-    <!--
-        Intro
-    --------------------------->
-
-    <div class="bg-grad">
-        <section class="container">
-            <div class="row">
-                <div class="col-lg-4">
-
-                    <div class="intro">
-                        <h1>Welcome</h1>
-                        <p>This is a “blank” starter page, simply delete this content and start adding elements.
-                            This index.html file has all the styles and scripts already loaded to use the template.</p>
-                    </div>
-
-                </div>
-                <div class="col-lg-4">
-
-                    <div class="intro-card">
-                        <h2>Details</h2>
-
-                        <ul class="intro-info">
-                            <li>template: <span>Artemis</span></li>
-                            <li>version: <span>1.0.15</span></li>
-                            <li>last update: <span><a href="89elements.com/changelog">02 April 2020</a></span></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-lg-4 lg-top-sm-gap">
-
-                    <div class="intro-card">
-                        <h2>Links</h2>
-
-                        <ul class="intro-links">
-                            <li><a href="https://build.89elements.com/elements" class="ic-link-animated">Browse Elements <span><i class="material-icons">chevron_right</i></span></a></li>
-                            <li><a href="https://89elements.com/contact">Feedback <span><i class="material-icons">chevron_right</i></span></a></li>
-                            <li><a href="https://89elements.com/license">License <span><i class="material-icons">chevron_right</i></span></a></li>
-                            <li><a href="https://89elements.com/faq">F.A.Q. <span><i class="material-icons">chevron_right</i></span></a></li>
-                            <li><a href="https://89elements.com/blog">Blog <span><i class="material-icons">chevron_right</i></span></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div><!-- end of .row -->
-        </section><!-- end of .container -->
-    </div><!-- end of .bg-grad -->
-
-
-
-    <!--
-        Guide
-    --------------------------->
-
-    <div class="guide">
-        <section class="container">
-            <div class="row">
-                <div class="col-lg-4">
-
-                    <div class="intro">
-                        <h1>How to use this?</h1>
-                        <p>Simply browse elements and copy & paste the markup for the element that you like.</p>
-                    </div>
-
-                </div><!-- end of .col-lg-4 -->
-            </div><!-- end of .row -->
-            <div class="row">
-                <div class="col-lg-4">
-
-                    <div class="i-guide">
-                        <h5>Step 1.</h5>
-                        <img class="img-fluid" src="assets/img/guide-step-1.gif" alt="Gif img">
-                    </div>
-
-                </div>
-                <div class="col-lg-4 lg-top-sm-gap">
-
-                    <div class="i-guide">
-                        <h5>Step 2.</h5>
-                        <img class="img-fluid" src="assets/img/guide-step-2.gif" alt="Gif img">
-                    </div>
-
-                </div>
-                <div class="col-lg-4 lg-top-sm-gap">
-
-                    <div class="i-guide">
-                        <h5>Step 3.</h5>
-                        <img class="img-fluid" src="assets/img/guide-step-3.gif" alt="Gif img">
-                    </div>
-
-                </div>
-            </div><!-- end of .row -->
-        </section><!-- end of .container -->
-    </div><!-- end of .guide -->
-
-
-
-    <script src="assets/js/vendors/vendors.min.js"></script>
-    <!-- ** YOUR JS HERE ** -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

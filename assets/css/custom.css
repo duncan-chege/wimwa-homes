@@ -1,0 +1,24 @@
+.site-logo{
+    height: 50px;
+    object-fit: cover;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Muli', Arial, sans-serif; 
+}
+
+p{
+    font-family: 'Quicksand', Helvetica, sans-serif; 
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    justify-content: space-around;
+    flex-wrap: nowrap; 
+    width: 100%;
+  }
+
+nav a {
+    color: black;
+}
