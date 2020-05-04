@@ -20,5 +20,55 @@ p{
   }
 
 nav a {
-    color: black;
+    color: white;
 }
+
+a.nav-link.active {
+    color: #e4a71e;
+    font-weight: bold;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), var(--image-url) top center;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 4.5em;
+    color: white;
+    font-weight: 700;
+}
+
+.header h2{
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.header button{
+    background-color: #F43A07;
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    top: 2em;
+    cursor: pointer;
+    font-family: 'Muli', Arial, sans-serif;
+}
+
+.door-icon{
+    width: 30px;
+}
+
