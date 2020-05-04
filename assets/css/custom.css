@@ -24,8 +24,7 @@ nav a {
 }
 
 a.nav-link.active {
-    color: #e4a71e;
-    font-weight: bold;
+    border-bottom: 3px solid;
 }
 
 .header{
