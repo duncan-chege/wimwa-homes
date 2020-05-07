@@ -112,6 +112,10 @@ a.nav-link.active:after {
     padding-top: 1.2em;
 }
 
+.about p:last-child{
+    margin-bottom: 2em;
+}
+
 .features{
     background: white;
     min-height: 60vh;
@@ -121,10 +125,30 @@ a.nav-link.active:after {
     margin-top: 3em;
 }
 
-.feature-details ul{
-    margin-top: 1.5em;
+.feature-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin: 2em 0;
     padding: 2em;
-    list-style: none;
     border: 3px solid #e0cac5;
     border-radius: 10px;
+    box-sizing: content-box;
+}
+
+.feature-details div{
+    padding: 0;
+}
+
+.feature-details p{
+    color: #E02407;
+    font-weight: 600;
+}
+
+.feature-details p:after{
+    content: "";
+    display: block;
+    width: 15%;
+    padding-top: 10px;
+    border-bottom: 6px solid #E2A49B;
 }
