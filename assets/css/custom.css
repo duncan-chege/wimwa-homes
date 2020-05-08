@@ -125,10 +125,10 @@ a.nav-link.active:after {
     margin-top: 3em;
 }
 
-.feature-details{
+.feature-details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 30px;
     margin: 2em 0;
     padding: 2em;
     border: 3px solid #e0cac5;
