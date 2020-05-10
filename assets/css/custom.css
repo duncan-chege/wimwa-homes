@@ -186,3 +186,22 @@ a.nav-link.active:after {
     font-weight: bold;
     padding-top: 12px;
 }
+
+.tab {
+    margin: 30px auto;
+    max-width: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.tab button{
+    background-color: var(--second-bg-color);
+    border: none;
+    color: orangered;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
