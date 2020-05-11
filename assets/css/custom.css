@@ -187,7 +187,7 @@ a.nav-link.active:after {
     padding-top: 12px;
 }
 
-.tab {
+.tabs {
     margin: 30px auto;
     max-width: 600px;
     display: flex;
@@ -195,7 +195,7 @@ a.nav-link.active:after {
     justify-content: space-between;
 }
 
-.tab button{
+.tabs button {
     background-color: var(--second-bg-color);
     border: none;
     color: orangered;
@@ -204,4 +204,61 @@ a.nav-link.active:after {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
 }
+
+.tab:hover{
+    background-color: orangered;
+    color: white;
+}
+
+.tab.active{
+    background-color: orangered;
+    color: white;
+}
+
+[data-tab-content]{
+    display: none;
+}
+
+.active[data-tab-content]{
+    display: block;
+}
+
+.grid{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.grid .grid-col{
+    flex: 1;
+    padding: 0 .2em;
+}
+
+.grid img{
+    width: 100%;
+}
+
+.grid-col--2, .grid-col--3{
+    display: none;
+}
+
+@media (min-width: 768px){
+    .grid-col--2{
+        display: block;
+    }
+    .grid-col{
+        padding: 0 .5em
+    }
+    .grid img{
+        margin-bottom: .6em;
+    }
+}
+
+@media (min-width: 1080px){
+    .grid-col--3{
+        display: block;
+    }
+}
+

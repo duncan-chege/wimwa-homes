@@ -13,6 +13,8 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/984498d317.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/custom.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js">
+  </script>
 </head>
 
 
@@ -54,24 +56,220 @@
   </nav>
 
   <div class="image-section">
-    <h2 class='text-center'> Gallery </h2>
-    <div class='tab'>
-      <button class='tablinks' onclick="openCity(event, 'Exterior')" id="defaultOpen">Exterior</button>
-      <button class='tablinks' onclick="openCity(event, 'Interior')">Interior</button>
+    <h2 class='text-center'> The Houses </h2>
+    <div class='tabs'>
+      <!--Defer in JS, data tab target in HTML, -->
+      <button data-tab-target="#exterior" class="tab active">Exterior</button>
+      <button data-tab-target="#interior" class="tab">Interior</button>
     </div>
-    
+
+    <div class='tabcontent'>
+      <div id='exterior' data-tab-content class="active">
+        <div class="grid">
+          <div class='grid-col grid-col--1'></div>
+          <div class='grid-col grid-col--2'></div>
+          <div class='grid-col grid-col--3'></div>
+          <div class='grid-col grid-col--4'></div>
+
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-1.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-2.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-3.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-4.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-5.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-6.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-7.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-8.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-9.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-10.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-11.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-12.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-13.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-14.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-15.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-16.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-17.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-18.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-19.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-20.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-21.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-22.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-23.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-24.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-25.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/exterior-images/ex-26.jpg">
+          </div>
+
+        </div>
+      </div>
+
+      <div id='interior' data-tab-content>
+        <div class="grid">
+          <div class='grid-col grid-col--1'></div>
+          <div class='grid-col grid-col--2'></div>
+          <div class='grid-col grid-col--3'></div>
+          <div class='grid-col grid-col--4'></div>
+
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-1.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-2.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-3.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-4.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-5.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-6.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-7.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-8.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-9.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-10.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-11.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-12.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-13.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-14.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-15.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-16.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-17.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-18.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-19.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-20.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-21.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-22.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-23.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-24.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-25.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-26.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-27.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-28.jpg">
+          </div>
+          <div class="grid-item">
+            <img src="assets/img/interior-images/in-29.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
+
+  <script src="https://unpkg.com/colcade@0/colcade.js"></script>
   <script src="assets/js/main.js"></script>
+
+  <script>
+    $('.grid').colcade({
+      columns: '.grid-col',
+      items: '.grid-item'
+    });
+  </script>
+
 </body>
 
 </html>
