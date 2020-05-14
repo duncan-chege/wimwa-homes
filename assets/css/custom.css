@@ -244,6 +244,16 @@ a.nav-link.active:after {
     display: none;
 }
 
+/*CONTACT PAGE*/
+.contact-section{
+    background: url('../img/exterior-images/ex-4.jpg');
+    min-height: 87.8vh;
+    background-size: cover;
+    background-position-y: 43%;
+    width: 100%;
+    opacity: 0.5;
+}
+
 @media (min-width: 768px){
     .grid-col--2{
         display: block;
