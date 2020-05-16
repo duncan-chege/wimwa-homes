@@ -207,68 +207,122 @@ a.nav-link.active:after {
     cursor: pointer;
 }
 
-.tab:hover{
+.tab:hover {
     background-color: orangered;
     color: white;
 }
 
-.tab.active{
+.tab.active {
     background-color: orangered;
     color: white;
 }
 
-[data-tab-content]{
+[data-tab-content] {
     display: none;
 }
 
-.active[data-tab-content]{
+.active[data-tab-content] {
     display: block;
 }
 
-.grid{
+.grid {
     display: flex;
     width: 95%;
     margin: 0 auto;
 }
 
-.grid .grid-col{
+.grid .grid-col {
     flex: 1;
     padding: 0 .2em;
 }
 
-.grid img{
+.grid img {
     width: 100%;
 }
 
-.grid-col--2, .grid-col--3{
+.grid-col--2,
+.grid-col--3 {
     display: none;
 }
 
 /*CONTACT PAGE*/
-.contact-section{
+.contact-section {
     background: url('../img/exterior-images/ex-4.jpg');
-    min-height: 87.8vh;
+    height: calc(100vh - 76px);
     background-size: cover;
     background-position-y: 43%;
     width: 100%;
-    opacity: 0.5;
 }
 
-@media (min-width: 768px){
-    .grid-col--2{
+.contact-section:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 76px;
+    bottom: 0;
+    background: #f0f0f087;
+}
+
+.contact-details {
+    height: 100%;
+}
+
+.contact-details h2{
+    margin-top: 3.5em;
+    font-weight: bold;
+}
+
+.specifics{
+    display: block;
+    max-width: 400px;
+    margin: 50px auto 0;
+}
+
+.phone,
+.email,
+.location {
+    float: left;
+    margin-right: 40px;
+    width: 26px;
+}
+
+.specifics p{
+    font-weight: 600;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    margin-top: 4.5em;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+@media (min-width: 768px) {
+    .grid-col--2 {
         display: block;
     }
-    .grid-col{
+
+    .grid-col {
         padding: 0 .5em
     }
-    .grid img{
+
+    .grid img {
         margin-bottom: .6em;
     }
 }
 
-@media (min-width: 1080px){
-    .grid-col--3{
+@media (min-width: 1080px) {
+    .grid-col--3 {
         display: block;
     }
 }
-
