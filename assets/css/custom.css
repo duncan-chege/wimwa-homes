@@ -42,8 +42,7 @@ nav a:hover {
 a.nav-link.active:after {
     content: "";
     display: block;
-    margin: 0 auto;
-    width: 90%;
+    width: 40px;
     padding-top: 5px;
     border-bottom: 6px solid white;
 }
@@ -164,16 +163,8 @@ a.nav-link.active:after {
     color: var(--nav-item-color);
 }
 
-.gallery-page .nav-link:hover {
-    color: var(--nav-item-color);
-}
-
 .gallery-page .nav-link.active:after {
-    content: "";
-    display: block;
-    margin: 0 auto;
-    width: 90%;
-    padding-top: 5px;
+    width: 40px;
     border-bottom: 6px solid var(--nav-item-color);
 }
 
