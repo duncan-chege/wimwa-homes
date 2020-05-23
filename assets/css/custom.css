@@ -47,7 +47,7 @@ a.nav-link.active:after {
     border-bottom: 6px solid white;
 }
 
-.nav-link:not(.active):hover{
+.nav-link:not(.active):hover {
     color: #0000008a;
     font-weight: bolder;
 }
@@ -113,7 +113,7 @@ a.nav-link.active:after {
     padding: 10px 40px 0px;
 }
 
-.house-area{
+.house-area {
     padding-bottom: 20px !important;
 }
 
@@ -130,11 +130,11 @@ a.nav-link.active:after {
     margin-bottom: 2em;
 }
 
-.location-link{
+.location-link {
     color: #f76f2f;
 }
 
-.location-link:hover{
+.location-link:hover {
     color: #f76f2f;
     text-decoration: none;
 }
@@ -249,6 +249,12 @@ a.nav-link.active:after {
     width: 100%;
 }
 
+.grid img:hover {
+    transform: scale(1.04);
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .grid-col--2,
 .grid-col--3 {
     display: none;
@@ -277,12 +283,12 @@ a.nav-link.active:after {
     height: 100%;
 }
 
-.contact-details h2{
+.contact-details h2 {
     margin-top: 3.5em;
     font-weight: bold;
 }
 
-.specifics{
+.specifics {
     display: block;
     max-width: 400px;
     margin: 50px auto 0;
@@ -296,24 +302,24 @@ a.nav-link.active:after {
     width: 26px;
 }
 
-.specifics p{
+.specifics p {
     font-weight: 600;
 }
 
-.map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
     margin-top: 4.5em;
 }
 
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 @media (min-width: 768px) {
