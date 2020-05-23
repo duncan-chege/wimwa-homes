@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/984498d317.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 
@@ -61,61 +62,70 @@
     </div>
   </div>
 
-
-  <div class='container-fluid intro-content'>
-    <div class='row'>
-      <div class='col-md-7 desc' id="about">
-        <h2 class='text-center'> Out of town comfort homes </h2>
-        <p>Wimwa homes is a prestigious and well designed 4 bedroom all ensuite townhouses that has only 5 units in
-          the gated development. It is located along the Nyeri-Nanyuki highway, after Nanyuki airstrip, behind Delta
-          Petrol Station, 400 metres from the highway.</p>
-          <p class='house-area'>All houses have individual titles on 300sq metres each</p>
-      </div>
-    </div>
-
-    <div class='row about'>
-      <div class='col-md-4'>
-        <h2 class='text-center'> About Wimwa Homes </h2>
-      </div>
-      <div class='col-md-8'>
-        <p>The Estate is well spaced and planned ensuring each town house has the privacy it deserves while at the same
-          time ensuring communual living. Each town house has a spacious lounge with a dining area that is open to a
-          large kitchen that is perfect for family meal preparation. The kitchen also has a spacious pantry.<p>
-
-            <p>Upstairs there are 3 large and well spaced bedrooms with large windows to let in ample
-              lighting and having scenic view of the surroundings. All 4 bedrooms are ensuite having in-built wardrobes.
-              The town houses also have a large master bedroom and is spacious, has enough closet space for his and hers
-              and a large master bathroom.</p>
-
-            <p>Each town house comes with a detached servants quaters and a laundry room including a washing area with
-              provision for a washing
-              machine.</p>
-
-            <p><b> Each unit goes for Ksh. 20 million (neg)<b></p>
-
-            <p> Click <a href="https://goo.gl/maps/GPGrFg1KUKR2" target="_blank" class='location-link'>here</a> to view the location </p>
-      </div>
-    </div>
-
-    <div class='row features'>
-      <div class='col-md-4'>
-        <h2 class='text-center'> Features </h2>
-      </div>
-      <div class='col-md-8'>
-        <div class='feature-details'>
-          <!-- Fix feature details grid responsiveness -->
-
-          <div class='first-section'>
-            <p> 2 parking spaces for each maisonette </p>
-            <p> Solar water heater of 200 ml from Davis & Shirtliff with 10 years warranty </p>
-            <p> Open space in the compound for parking or functions </p>
-            <p> Electric fence </p>
-            </ul>
+  <div id='about'>
+    <div data-aos="fade-up" data-aos-duration="1000">
+      <div class='container-fluid intro-content'>
+        <div class='row'>
+          <div class='col-md-7 desc'>
+            <h2 class='text-center'> Out of town comfort homes </h2>
+            <p>Wimwa homes is a prestigious and well designed 4 bedroom all ensuite townhouses that has only 5 units in
+              the gated development. It is located along the Nyeri-Nanyuki highway, after Nanyuki airstrip, behind Delta
+              Petrol Station, 400 metres from the highway.</p>
+            <p class='house-area'>All houses have individual titles on 300sq metres each</p>
           </div>
-          <div class='second-section'>
-            <p> 24 security with CCTV Cameras </p>
-            <p> Internet connection </p>
-            <p> Ample water storage and supply </p>
+        </div>
+
+        <div class='row about'>
+          <div class='col-md-4'>
+            <h2 class='text-center'> About Wimwa Homes </h2>
+          </div>
+          <div class='col-md-8'>
+            <p>The Estate is well spaced and planned ensuring each town house has the privacy it deserves while at the
+              same
+              time ensuring communual living. Each town house has a spacious lounge with a dining area that is open to a
+              large kitchen that is perfect for family meal preparation. The kitchen also has a spacious pantry.<p>
+
+                <p>Upstairs there are 3 large and well spaced bedrooms with large windows to let in ample
+                  lighting and having scenic view of the surroundings. All 4 bedrooms are ensuite having in-built
+                  wardrobes.
+                  The town houses also have a large master bedroom and is spacious, has enough closet space for his and
+                  hers
+                  and a large master bathroom.</p>
+
+                <p>Each town house comes with a detached servants quaters and a laundry room including a washing area
+                  with
+                  provision for a washing
+                  machine.</p>
+
+                <p><b> Each unit goes for Ksh. 20 million (neg)<b></p>
+
+                <p> Click <a href="https://goo.gl/maps/GPGrFg1KUKR2" target="_blank" class='location-link'>here</a> to
+                  view
+                  the location </p>
+          </div>
+        </div>
+
+        <div class='row features'>
+          <div class='col-md-4'>
+            <h2 class='text-center'> Features </h2>
+          </div>
+          <div class='col-md-8'>
+            <div class='feature-details'>
+              <!-- Fix feature details grid responsiveness -->
+
+              <div class='first-section'>
+                <p> 2 parking spaces for each maisonette </p>
+                <p> Solar water heater of 200 ml from Davis & Shirtliff with 10 years warranty </p>
+                <p> Open space in the compound for parking or functions </p>
+                <p> Electric fence </p>
+                </ul>
+              </div>
+              <div class='second-section'>
+                <p> 24 security with CCTV Cameras </p>
+                <p> Internet connection </p>
+                <p> Ample water storage and supply </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -133,6 +143,11 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
   <script src="assets/js/main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
