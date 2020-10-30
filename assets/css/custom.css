@@ -17,8 +17,7 @@ p {
     font-family: 'Quicksand', Helvetica, sans-serif;
 }
 
-site-logo {
-    display: none;
+.site-logo {
     height: 60px;
     object-fit: cover;
     background-color: white;
