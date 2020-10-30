@@ -18,8 +18,12 @@ p {
 }
 
 .site-logo {
-    height: 50px;
+    height: 60px;
     object-fit: cover;
+    background-color: white;
+    position: relative;
+    top: -13px;
+    padding: 5px;
 }
 
 .navbar ul {
