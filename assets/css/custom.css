@@ -18,6 +18,7 @@ p {
 }
 
 site-logo {
+    display: none;
     height: 60px;
     object-fit: cover;
     background-color: white;
