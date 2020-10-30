@@ -17,9 +17,13 @@ p {
     font-family: 'Quicksand', Helvetica, sans-serif;
 }
 
-.site-logo {
-    height: 50px;
+site-logo {
+    height: 60px;
     object-fit: cover;
+    background-color: white;
+    position: relative;
+    top: -13px;
+    padding: 5px;
 }
 
 .navbar ul {
